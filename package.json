@@ -4,7 +4,8 @@
   "description": "A simple website for pc platform.",
   "main": "index.js",
   "scripts": {
-    "dev": "gulp"
+    "dev": "gulp",
+    "build": "gulp build"
   },
   "repository": {
     "type": "git",
