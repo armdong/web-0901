@@ -5,8 +5,38 @@
   }
 
   .detail-container {
+    position: relative;
     width: 900px;
     margin: 0 auto;
+
+    .qrcode {
+      position: absolute;
+      top: 62px;
+      right: 0;
+      width: 158px;
+      height: 158px;
+      border: 1px solid #fafafa;
+      background-color: #fff;
+
+      .text {
+        padding: 10px;
+        line-height: 18px;
+        text-align: center;
+        font-size: 12px;
+        color: #333;
+      }
+
+      .img {
+        width: 90px;
+        height: 90px;
+        margin: 0 auto;
+        overflow: hidden;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
 
     .position {
       font-size: 12px;
