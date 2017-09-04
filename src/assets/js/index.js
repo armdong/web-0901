@@ -2,6 +2,9 @@
   $(function() {
     // 轮播图
     fnInitMainSlider();
+
+    // 地图
+    fnInitMap();
   });
 
   function fnInitMainSlider() {
@@ -45,5 +48,20 @@
       $oMainSlider.find('.prev-slide').hide();
       $oMainSlider.find('.next-slide').hide();
     }
+  }
+
+  function fnInitMap() {
+    var chart = echarts.init(
+      document.getElementById('mapContainer'),
+      'customed'
+    );
+    chart.setOption({
+      series: [
+        {
+          type: 'map',
+          map: 'quanzhou',
+        },
+      ],
+    });
   }
 })(window, jQuery);

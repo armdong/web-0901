@@ -103,7 +103,7 @@
   .infomation {
     position: absolute;
     top: 0;
-    width: 640px;
+    width: 960px;
     height: 622px;
 
     .info-container {
@@ -138,16 +138,22 @@
   }
 
   .info-left {
-    left: -190px;
+    left: -510px;
     background-color: #333;
 
     .info-container {
       margin-left: auto;
     }
+
+    .map-container {
+      width: 450px;
+      height: 400px;
+      margin-top: 20px;
+    }
   }
 
   .info-right {
-    right: -190px;
+    right: -510px;
     background: {
       image: url('../imgs/home_sports.jpg');
       repeat: no-repeat;
@@ -157,6 +163,52 @@
 
     .info-container {
       margin-right: auto;
+    }
+
+    .sports-container {
+      width: 100%;
+      padding-top: 70px;
+
+      .sports-group {
+        float: left;
+        width: 100px;
+
+        &.group-left {
+          margin-left: 58px;
+        }
+        &.group-center,
+        &.group-right {
+          margin-left: 29px;
+        }
+
+        .sport {
+          width: 100%;
+          margin-bottom: 32px;
+
+          .img {
+            float: left;
+            width: 35px;
+            height: 43px;
+            overflow: hidden;
+
+            &:hover {
+              background-color: rgba(255, 255, 255, 0.2);
+            }
+
+            img {
+              width: 100%;
+            }
+          }
+
+          .text {
+            float: right;
+            width: 55px;
+            font-size: 16px;
+            line-height: 43px;
+            color: #fff;
+          }
+        }
+      }
     }
   }
 }
