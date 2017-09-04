@@ -1,7 +1,7 @@
 .detail-page {
   .detail-wrapper {
     width: 100%;
-    border-top: 2px solid #f9f9f9;
+    border-top: 1px solid #c0bebe;
   }
 
   .detail-container {
@@ -42,10 +42,10 @@
       font-size: 12px;
       color: #666;
       line-height: 48px;
-      border-bottom: 1px solid #4098cb;
+      border-bottom: 1px solid #4097ca;
 
       a {
-        color: #4098cb;
+        color: #4097ca;
 
         &:hover {
           text-decoration: underline;
@@ -110,10 +110,10 @@
         line-height: 34px;
         text-align: center;
         color: #fff;
-        background-color: #4098cb;
+        background-color: #4097ca;
 
         &:hover {
-          text-decoration: underline;
+          background-color: #278ec1;
         }
       }
 
@@ -145,7 +145,7 @@
         color: #4f4f4f;
         line-height: 28px;
         font-weight: bold;
-        border-bottom: 1px solid #4098cb;
+        border-bottom: 1px solid #4097ca;
       }
 
       .content {
