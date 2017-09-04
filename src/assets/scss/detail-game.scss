@@ -55,53 +55,13 @@
 
     .summary {
       width: 100%;
+      min-height: 170px;
 
       > h2 {
         font-size: 18px;
         color: #333;
         line-height: 40px;
         font-weight: normal;
-      }
-
-      > p {
-        line-height: 26px;
-
-        span {
-          display: inline-block;
-        }
-
-        .title {
-          padding-left: 25px;
-          font-size: 12px;
-          color: #666;
-          background: {
-            repeat: no-repeat;
-            position: left center;
-          }
-        }
-
-        .content {
-          font-size: 12px;
-          color: #333;
-        }
-
-        &.price .title {
-          background-size: 14px 10px;
-          background-image: url('../imgs/icon_price.png');
-        }
-
-        &.price .content {
-          i {
-            font-style: normal;
-            font-size: 14px;
-            color: #f56429;
-          }
-        }
-
-        &.count .title {
-          background-size: 11px 10px;
-          background-image: url('../imgs/icon_user.png');
-        }
       }
 
       .btn-buy {
@@ -117,23 +77,6 @@
 
         &:hover {
           text-decoration: underline;
-        }
-      }
-
-      .imgs {
-        width: 100%;
-        padding: 30px 0;
-
-        li {
-          float: left;
-          width: 178px;
-          height: 118px;
-          margin-right: 10px;
-          overflow: hidden;
-
-          img {
-            width: 100%;
-          }
         }
       }
     }
@@ -163,6 +106,10 @@
           li {
             line-height: 28px;
 
+            &.table {
+              padding: 10px 0;
+            }
+
             .desc-title {
               display: inline-block;
               float: left;
@@ -174,6 +121,61 @@
               display: inline-block;
               float: left;
               margin-left: 10px;
+
+              span {
+                color: #f66429;
+              }
+
+              table,
+              tr,
+              td {
+                border: 1px solid #e5e5e5;
+                vertical-align: middle;
+              }
+
+              thead td {
+                background-color: #e2e2e2;
+              }
+
+              .tt {
+                width: 72px;
+                line-height: 18px;
+                text-align: center;
+                vertical-align: middle;
+              }
+
+              .ctt {
+                width: 266px;
+                line-height: 18px;
+                padding-left: 20px;
+              }
+
+              .ctt1,
+              .ctt2,
+              .ctt3 {
+                width: 94px;
+                line-height: 18px;
+                text-align: center;
+
+                table,
+                tr,
+                td {
+                  width: 100%;
+                  border-collapse: collapse;
+                  border: none;
+                  padding: 0;
+                  margin: 0;
+                }
+
+                tr {
+                  border-bottom: 1px solid #e5e5e5;
+
+                  &.last,
+                  &:last-of-type {
+                    border-bottom: none;
+                  }
+                }
+              }
             }
           }
         }
