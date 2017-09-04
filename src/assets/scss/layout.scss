@@ -108,12 +108,18 @@ input {
   min-width: 900px;
   max-width: 1920px;
   margin: 0 auto;
+  padding-top: 40px;
   overflow: hidden;
 }
 
 .layout-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999999;
   width: 100%;
   background-color: #fff;
+  border-bottom: 1px solid #c0bebe;
 
   .container {
     width: 900px;
