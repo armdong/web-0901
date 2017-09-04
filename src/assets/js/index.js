@@ -60,6 +60,19 @@
         {
           type: 'map',
           map: 'quanzhou',
+          zoom: 1.2,
+          label: {
+            normal: {
+              show: true,
+              color: '#fff',
+              position: 'left',
+            },
+            emphasis: {
+              show: true,
+              color: '#fff',
+              position: 'left',
+            },
+          },
         },
       ],
     });
