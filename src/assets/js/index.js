@@ -65,12 +65,12 @@
             normal: {
               show: true,
               color: '#fff',
-              position: 'left',
+              position: ['50%', '50%'],
             },
             emphasis: {
               show: true,
               color: '#fff',
-              position: 'left',
+              position: ['50%', '50%'],
             },
           },
         },
