@@ -106,17 +106,82 @@
 
       .btn-buy {
         display: block;
+        position: relative;
         width: 120px;
         height: 34px;
         margin-top: 15px;
-        font-size: 14px;
-        line-height: 34px;
-        text-align: center;
-        color: #fff;
-        background-color: #4097ca;
 
-        &:hover {
-          background-color: #278ec1;
+        > p {
+          font-size: 14px;
+          line-height: 34px;
+          text-align: center;
+          color: #fff;
+          background-color: #4097ca;
+          cursor: pointer;
+
+          &:hover {
+            background-color: #278ec1;
+          }
+        }
+
+        .qrcode-container {
+          display: none;
+          position: absolute;
+          left: 137px;
+          top: -8px;
+          z-index: 99;
+          width: 180px;
+          height: 160px;
+          background-color: #fff;
+
+          .triangle {
+            display: block;
+            position: absolute;
+            top: 19px;
+            left: -7px;
+            width: 7px;
+            height: 13px;
+            background: {
+              image: url('../imgs/icon_triangle_left.png');
+              repeat: no-repeat;
+              size: cover;
+              position: center center;
+            }
+          }
+
+          .btn-close {
+            display: block;
+            position: absolute;
+            top: 0;
+            right: -30px;
+            width: 21px;
+            height: 21px;
+            background: {
+              image: url('../imgs/icon_close.png');
+              repeat: no-repeat;
+              size: cover;
+              position: center center;
+            }
+            cursor: pointer;
+          }
+
+          > p {
+            font-size: 12px;
+            line-height: 45px;
+            text-align: center;
+            color: #333;
+          }
+
+          .img {
+            width: 90px;
+            height: 90px;
+            margin: 0 auto;
+            overflow: hidden;
+
+            img {
+              width: 100%;
+            }
+          }
         }
       }
 
