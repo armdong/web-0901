@@ -12,9 +12,9 @@
     position: absolute;
     top: 0;
     left: 50%;
-    width: 1280px;
+    width: 1920px;
     height: 614px;
-    margin-left: -640px;
+    margin-left: -960px;
   }
 
   .swiper-slide {
@@ -87,8 +87,24 @@
       height: 190px;
       background-color: #4097ca;
 
+      &:after {
+        display: block;
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 0%;
+        height: 4px;
+        background-color: #fff;
+        transition: width 0.3s ease-in-out;
+      }
+
       &:hover {
         background-color: #278ec1;
+
+        &:after {
+          width: 100%;
+        }
       }
     }
   }
@@ -109,7 +125,7 @@
     .info-container {
       width: 450px;
       height: 542px;
-      padding-top: 84px;
+      padding-top: 44px;
 
       .title {
         text-align: center;
@@ -147,7 +163,7 @@
 
     .map-container {
       width: 450px;
-      height: 450px;
+      height: 520px;
       margin-top: 20px;
     }
   }
@@ -167,7 +183,7 @@
 
     .sports-container {
       width: 100%;
-      padding-top: 70px;
+      padding-top: 90px;
 
       .sports-group {
         float: left;
