@@ -63,7 +63,7 @@
           zoom: 1.2,
           label: {
             normal: {
-              show: true,
+              show: false,
               color: '#fff',
               position: ['50%', '50%'],
             },
