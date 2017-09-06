@@ -19,6 +19,11 @@
 
   .swiper-slide {
     display: block;
+    background: {
+      repeat: no-repeat;
+      size: cover;
+      position: center center;
+    }
   }
 
   .swiper-pagination {

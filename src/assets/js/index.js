@@ -9,9 +9,43 @@
 
   function fnInitMainSlider() {
     var $oMainSlider = $('#mainSlider'),
+      $oSlideWrapper = $oMainSlider.find('.slider-wrapper'),
+      $oSwiperWrapper = $oMainSlider.find('.swiper-wrapper'),
       $oMainSwiper = $oMainSlider.find('.swiper-container'),
+      $aSwiperSlide = $oMainSlider.find('.swiper-slide'),
       _swiper = null,
-      count = $oMainSlider.find('.swiper-slide').length;
+      count = $aSwiperSlide.length;
+
+    var viewWidth = $(window).width(),
+      viewHeight = $(window).height(),
+      iHeaderH = 40;
+
+    // reset banner height
+    (function() {
+      $oMainSlider.css({
+        height: viewHeight - iHeaderH + 'px',
+      });
+
+      $oSlideWrapper.css({
+        height: viewHeight - iHeaderH + 'px',
+      });
+
+      $oSwiperWrapper.css({
+        height: viewHeight - iHeaderH + 'px',
+      });
+
+      $oMainSwiper.css({
+        height: viewHeight - iHeaderH + 'px',
+      });
+
+      // foreach slide
+      $.each($aSwiperSlide, function(idx, slide) {
+        var imgSrc = $(slide).attr('data-img');
+        $(slide).css({
+          'background-image': 'url(' + imgSrc + ')',
+        });
+      });
+    })();
 
     if (count > 1) {
       _swiper = $oMainSwiper.swiper({
@@ -21,6 +55,7 @@
         autoplay: 5000,
         autoplayDisableOnInteraction: false,
         speed: 1000,
+        height: viewHeight - iHeaderH,
       });
 
       // slide prev
