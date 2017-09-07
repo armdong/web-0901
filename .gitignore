@@ -2,6 +2,6 @@
 .project
 node_modules
 build
-src/assets/css
+src/static/css
 debug.log
 npm-debug.log
